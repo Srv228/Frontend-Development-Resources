@@ -1,0 +1,206 @@
+<!-- Even if you dont put this most web browser is still work fine but it is a good practice to do so -->
+
+<!DOCTYPE html>  
+<!--This tag will show the browser that our markup is html5-->
+
+<!--Tags are not case sensitive : <h1></h1> = <H1></H1>-->
+
+<html lang="en">
+    <!--All of my webpage content goes in this tag-->
+    <head>
+        <!-- All data that is not part of the main body -->
+        <!--head tag is nested within html tag-->
+        <!--container for meta data-->
+
+        <title>My First Website!</title>
+         <!-- Page title -->
+
+        <meta name="description" content="My First Website">
+        <!-- meta is a tag,name and content are attributes,description & My First Website is values of attributes provide extra information About Tag -->
+        <!-- meta is mainly use for SEO -->
+    </head>
+    <body>
+      <!--contain all data rendered by the browser(visible to the user)-->
+       <!-- All the body goes here -->
+        <!-- body : visible date in the webpage -->
+
+
+
+
+     <!--Headings : h1,h2,h3,h4,h5,h6 in decreasing order of size/importance-->
+          
+     <h1>Heading1</h1>
+     <h2>Heading2</h2>
+     <h3>Heading3</h3>
+     <h4>Heading4</h4>
+     <h5>Heading5</h5>
+     <h6>Heading6</h6>
+
+
+     <p>
+        <!--paragraph contents goes here-->
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem quos, omnis praesentium iure doloribus, ab repellendus, commodi asperiores dicta qui molestiae. Cum nisi dolore hic provident accusantium atque ut odio recusandae, commodi maiores ipsa optio aut quas eaque aliquid quia enim voluptatibus aliquam repellendus voluptas accusamus minus! Amet, ut laborum!
+     </p>
+
+     <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae, tempore modi, iusto unde porro necessitatibus deleniti vitae maxime, id consequatur incidunt et nam ipsam consectetur ab enim error nobis illo non dolorum rem. Culpa fuga ratione fugit nesciunt voluptatem itaque maxime officiis odio molestiae iure? Cum ea placeat eaque odit?
+     </p>
+
+     <!--Can we have user defined tags ?? No you cannot write <sourav></sourav>
+    ->In react we have see componenets that similar to user defined thing
+    -->
+
+    <!-- If you put your body tag in the head tag like title tag , it will working fine ,but it is not good practice -->
+
+    
+
+  <!-- to display an image , use img tag -->
+
+  <!-- absolute path -->
+
+ <img 
+ src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaNp_lmKhGOZ_6oG5JT1KHualdGyoiPE7JbvEPD36Iaw&s" 
+ alt="SidhuMoosewala Pic"
+ />
+
+ <!-- Relative path of image -->
+ 
+ <img src="./download.jpg" alt="KaranAujla Pic" height="131px" width="131px">
+
+
+ <!-- To create an image a link , simply wrap it inside anchor tag-->
+
+ <a href="https://www.google.com" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/2008px-Google_%22G%22_Logo.svg.png" alt="Go to Google"height="131px"></a>
+
+ 
+ <!-- to display links use Anchor Tag -->
+
+<a href="https://www.twitter.com">Twitter</a>
+<a href="https://www.google.com" target="_blank">Google</a>
+
+ 
+ <!-- Line break tag : empty tag -->
+
+ <p>Hello My name is Sourav, 
+    <br>
+    I am learning Html
+ </p>
+
+
+ <!-- Lists -->
+ <!-- types of lists -->
+ <!--
+    1 . ordered list , 
+    2 . unordered list ,
+    3 . Description list  -->
+
+
+    <!--  1 . Ordered list -->
+    <!-- 1,A,a,I,i -->
+
+ <ol type="a">
+     <!--Nest list items inside ol tag -->
+     <!-- li -> List items -->
+     <li>This is list item 1 </li>
+     <li>This is list item 2 </li>
+     <li>This is list item 3 </li>
+    </ol>
+    
+<!-- hr tag :  horizontal rule  -->
+<hr>
+
+  <!-- 2. unordered list  -->
+
+  <h4>This is Unordered List</h4>
+  <ul style="list-style-type: circle;">
+     <!--Nest list items inside ol tag -->
+     <!-- li -> List items -->
+    <li>This is list item 1 </li>
+    <li>This is list item 2 </li>
+    <li>This is list item 3 </li>
+  </ul>
+
+  <hr>
+   
+  <!--  3 . Description list -->
+  <!-- used for displaying title with its description -->
+  <!-- pair of dt(description title) & dd(description data) -->
+
+    <h4>This is Description List</h4>
+  <dl>
+     <dt>Biriyani :</dt>
+     <dd>Kolkata Biriyani</dd>
+     <dd>Hydrabadi Biriyani</dd>
+
+     <dt>Momo :</dt>
+     <dd>Steamed Momo</dd>
+     <dd>Fried Momo</dd>
+
+  </dl>
+
+  <!-- use nested instead of this  -->
+
+
+  <!-- Nested List -->
+  <!-- Concept : you can nest one list inside another -->
+
+  <h1>Web Development:</h1>
+  <ol>
+    <li>Frontend Web Development
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>React JS</li>
+        </ul>
+ </li>
+    <li>BackEnd Web Development
+    <ul>
+        <li>Node Js</li>
+        <li>MongoDB</li>
+        <li>Express JS</li>
+        <li>React</li>
+    </ul>
+</li>
+    <li>UI/UX Designer</li>
+  </ol>
+
+
+
+
+
+  
+
+  <!-- Display property of HTML are  two type  :
+              1.Inline element
+              2.Block element  -->
+
+  <!-- 1.Inline element : This will not take the entire line  ,
+    they can  adjust on the same line
+    
+  eg - anchor tag -> inline element because it does not take entire line 
+    
+
+  2 .Block element : This element will always take one entire line of space
+
+  eg - <h1>Hello</h1>
+
+    h1 tags does not require the entire line but still uses it
+
+-->
+
+   
+<!-- button Tag : Inline -->
+
+ <button>Submit</button>
+ <button>Close</button>
+
+
+
+<a href="./form.html" target="_blank">Go to Form </a>
+
+
+
+    </body>
+
+</html>

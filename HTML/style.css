@@ -1,0 +1,96 @@
+/* selector{
+    property : value 
+} */
+
+/*  Tag selector : To select a tag or multiple tag on which css inside the curly braces (table,td,th,tr) */
+
+
+table{
+   font-family: Arial, Helvetica, sans-serif;
+   border-collapse: collapse;
+   width: 100%;
+}
+
+td,th{
+  border: 1px solid grey;
+  text-align:left;
+  padding: 8px;
+}
+
+tr:nth-child(even){
+  background-color: grey;
+  color: rgb(34, 24, 165);
+}
+
+
+/* Id selector */
+
+/* id is unique in the web page  */
+
+#jeff-bezos{
+    background-color: #d9d9;
+}
+
+#elon-musk{
+    background-color: #f25652;
+}
+
+#bill-gates{
+    background-color: #de4c70;
+}
+
+
+/* Class selector */
+/* not unique multiple tags can have same class attribute */
+
+.billonaires{
+    font-size: 20px;
+}
+
+/* nesting selectors */
+
+/* select all h1 tag inside class billonaires */
+
+.billonaires h1{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 50px;
+    color: rgba(2, 127, 165, 0.886);
+}
+
+
+/* Combining selectors */
+/* all h1 tag that have class of heading */
+
+
+h1.heading{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 50px;
+    color: rgba(220, 6, 188, 0.84);
+}
+
+
+
+/* Q . All p tags within article of class billonaires  */
+/* even grand children are selected in this case  */
+/* both direct and indirect descendent */
+
+
+/* article.billonaires p{
+   color:rgb(226, 14, 14);
+} */
+
+
+/* when we want the direct child , we use >   */
+/* direct descendent */
+
+
+/* article.billonaires > p {
+    color:white;
+} */
+
+
+/* font-family,font-size,color,background-color,width */
+
+
+/* CSS Box Model */
+

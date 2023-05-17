@@ -1,0 +1,147 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!-- Utf 8 supports various character  in various languages-->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <!--not relevent anymore as we know internet exolorer retired (more relevent in IE)-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--scale the content as per device by using viewport-->
+  <title>Registration Form</title>
+</head>
+<body>
+ 
+ <form style="text-align: center;">
+        <h1>Registration Form</h1>
+
+        <!-- inside form tag we will have label & input -->
+        <!-- each label corresponds to a particular input -->
+
+         <!-- Label use just  to display some helper text -->
+         <!-- labels are optional -->
+         <!-- input tag use to take user input -->
+
+
+         <!-- div : block tags use to make division in markup -->
+
+
+<div>
+    <label for="username">Enter your username</label>
+    <input 
+    type="text" 
+    name="user" 
+    id="username" 
+    placeholder="Enter your username" >
+
+</div>
+
+         <!-- for attribute here means : kis particular chiz ke liye yeh lebel hain -->
+
+
+         <!-- value of  labels for  & inputs id must be same 
+           
+          but why ?????
+
+          agar mein label pein click karu to automatically  it will directly move me to the input.
+
+          if both are not same this functionality will not work
+        
+     -->
+
+         <!-- name attribute : can be different from id , can be used in javascript 
+        
+          obj{
+            <key>(name):<value>value) 
+            user : Sourav Dey
+          }
+
+        -->
+
+        <!-- for ( need not unique used in many ,but dont put same value ,good practice) used only on label but id used any element should be unique for each element -->
+        <!-- for referes to id not id refers to for -->
+
+     <div>
+        <label for="password">Password</label>
+        <input type="password" name="pwd" id="password" placeholder="Enter your password">
+     </div> 
+
+
+    <!-- span is same as div but it is inline instead of block -->
+    
+     <!-- <span>
+        <label for="username"  >Enter your username</label>
+        <input type="text" name="user" id="username" placeholder="Enter your username" >
+    </span>
+
+    <span>
+        <label for="password">Password</label>
+        <input type="password" name="pwd" id="password" placeholder="Enter your password">
+
+    </span> -->
+
+    <div id="radio-group">
+       
+      <label for="">Gender</label>
+
+      <input type="radio" name="gender" id="male"  value="male">
+      <label for="male">Male</label>
+      <input type="radio" name="gender" id="female"  value="female">
+      <label for="female">Female</label>
+      <input type="radio" name="gender" id="other"  value="other">
+      <label for="other">Other</label>
+
+      <!-- whenever create  group of radio button , give the same name  , otherwise you check all in one time  -->
+
+      <!-- in checkbox you select multiple items , but in radio box only select one item -->
+      
+    </div>
+
+
+
+      <div id="checkbox-group">
+         <label for="">Select your Vehicle</label>
+
+        <input type="checkbox" name="vehicle" value="bike"id="bike">
+        <label for="bike">Bike</label>
+
+        <input type="checkbox" name="vehicle" value="Car" id="Car">
+        <label for="Car">Car</label>
+
+        <input type="checkbox" name="vehicle"  value="Bus" id="Bus">
+        <label for="Bus">Bus</label>
+
+   </div>
+
+   <!-- Drop down  -->
+   
+   <label for="">Select your Car</label>
+
+   <select name="cars" id="cars">
+       <option value="">Select your Car</option>
+       <!-- explicitly make placeholder -->
+
+       
+       <option value="volvo">Volvo</option>
+       <option value="saab">Saab</option>
+       <option value="mercedez">Mercedez</option>
+       <option value="audi">Audi</option>
+    
+</select> 
+
+
+<!-- TextArea -->
+
+<div id="text-area">
+  <textarea name="" id="" cols="30" rows="10" placeholder="Please add Feedback"></textarea>
+</div>
+
+
+ </form>
+
+ <button><a href="./index.html" target="_blank">Go Back to main page</a></button>
+
+ 
+
+</body>
+</html>
