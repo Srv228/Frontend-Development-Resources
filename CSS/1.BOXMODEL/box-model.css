@@ -1,0 +1,235 @@
+body{
+    /* padding: 30px; */
+    /* if we remove padding then our boxes(div) will stuck to boundary of our page  */
+ 
+    /* by default each tag has some padding and margin ,we remove */
+     /* padding: 0; */
+     /* padding is already zero */
+     margin: 0;
+     /* some margin was there , we remove */
+ }
+ 
+ div{
+    
+     background-color: #f25252;
+    
+  /* i will give it explicit width */
+     width: 300px;
+ 
+ 
+ 
+ 
+ 
+         /* Margin : */
+ 
+ 
+           /* distance between all the div increase */
+     /* first div dekhega ki merese dusre(outer) tag ko 20px margin banaw */
+     /* margin is for outer content */
+ 
+     /* margin: 20px; */
+ 
+     /* margin-left: 100px; */
+     /* margin-top: 50px; */
+     /* margin-right: 200px; */
+     /* margin-bottom: 100px; */
+ 
+     /* ShortHand Syntax for margin */
+ 
+     /* margin : top right bottom left  (trbl)*/
+ 
+     /* margin:10px 20px 30px 40px ; */
+ 
+     /* margin top-bottom left-right */
+ 
+         margin: 10px 50px;
+         
+ 
+    /* if you want same margin from left and right , no affect on top or bottom  */
+    /*center your div*/
+    /* center anything with some width , some constant width , if we remove above width:300px then it will not work */
+ 
+         margin: auto;
+ 
+ 
+  /* margin positive  move away  from other tag
+     margin negative  towards   the  other tag */
+ 
+     /* margin-top: -10px; */
+ 
+ 
+ 
+ 
+        /* Padding : */
+ 
+ 
+     /* main content jo div mein hain uska beech ka distance  */
+     /* padding is for inner content */
+ 
+     padding: 20px;
+ 
+     /* padding shorthand */
+     padding: 10px 20px;
+ 
+ 
+ 
+     border: 5px solid black;
+     /* width of border , style of border , color */
+     /* apply betwwn the padding and margin */
+ 
+   
+ 
+ 
+             /* Overflow Property  : */
+ 
+ 
+ 
+     /* Now mene iski width fixed kardi , agar mein hight bhi fix kar du */
+ 
+     height: 300px;
+ 
+ 
+     /* to fix overflow from div */
+ 
+     /* overflow -> auto , hidden , scroll , visible */
+ 
+ 
+         /* overflow:visible; */
+ 
+         /* show overflow content */
+        /* nothing will change vidible is default one  */
+ 
+         
+         /* overflow:hidden; */
+ 
+        /* hide over flow content  */
+         
+         
+         /* overflow: scroll; */
+         
+         /* show scroll bar */
+ 
+          /* problem  with scroll- enough content hain phirbhi scroll dikha raha hain */
+ 
+ 
+          overflow: auto;
+ 
+           /* combination of  hidden + scroll */
+          /*  shows scroll-bar only when required */
+ 
+          /* this is both for x and y axis , if you want to control seperately you have overflow-x , overflow-y property */
+ 
+ 
+ 
+ 
+ 
+ 
+              /* play with text align */
+ 
+ 
+            /* text-align:center ; */
+            /* text-align:justify ; */
+ 
+            /* text-align: right; */
+            /* text-align: left ; */
+            /* text align left is default one */
+ 
+          
+ 
+       }
+ 
+ 
+ 
+ 
+ 
+                     /* pseudo class  :*/
+ 
+ 
+     /* selector:pseudo-class{
+            property : value ;
+     }
+        */
+ 
+        /*apply this style when div with id hoverable is hovered on by user  */
+ 
+        div#hoverable:hover{
+          background-color: aqua;
+          color: white;
+        }
+ 
+        a{
+          font-size: 40px;
+          margin-left: 20px;
+        }
+ 
+ 
+        /* unvsited link */
+ 
+ a:link{
+    color: red;
+    /* to remove underline of anchor tag */
+    text-decoration: none;
+ }
+ 
+ /* visited link */
+ 
+ a:visited{
+   color: greenyellow;
+      
+ }
+ 
+ /* mouse over link */
+ 
+ a:hover{
+    color: rgb(203, 44, 177);
+    text-decoration: underline;
+ }
+ 
+ /* selected link */
+ /* click karne par jo color aata hain */
+ a:active{
+    color: blue;
+ }
+ 
+ 
+            /* Pseudo Element */
+ 
+ 
+ /* pseudo Element -> style specific part of an element */
+ /* selector ::pseudo-element{
+             style here!
+     }
+ */
+ /* first line mein koyi tag nahi hain us case mein hum pseudo elements use kar rahe hain */
+ 
+ div.hoverable::first-line{
+    font-size: 20px;
+    color: aqua;
+ }
+ 
+ div.hoverable::first-letter{
+    font-size: 50px;
+ }
+ 
+ div::after{
+    content: "Footer Content";
+    /* insert images */
+    content: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2QpFfIkt-PB4lalwrZCo1RBXUfdScjOIbdA&usqp=CAU');
+ }
+ 
+       
+ 
+ 
+ 
+      
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
